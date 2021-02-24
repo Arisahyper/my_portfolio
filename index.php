@@ -5,15 +5,18 @@ $comment = "";
 
 if (isset($_POST["send"]) === true) {
     $name = $_POST["name"];
-    $email = $_POST["email"];
-    $body = $_POST["comment"];
+    $mail = $_POST["mail"];
+    $comment = $_POST["comment"];
 
     $fp = fopen("board.txt", "a"); //書き込み専用
 
-    fwrite($fp, "お名前：" . $name . "\n");
-    fwrite($fp, "e-mail：" . $email . "\n");
-    fwrite($fp, "コメント：" . $comment . "\n");
-    fwrite($fp, "\n");
+    fwrite($fp, "【お名前】\n");
+    fwrite($fp, $name . "\n");
+    fwrite($fp, "【メール】\n");
+    fwrite($fp, $mail . "\n");
+    fwrite($fp, "【コメント】\n");
+    fwrite($fp, $comment . "\n");
+    fwrite($fp, "--------------------------------\n");
 
     fclose($fp);
 }
@@ -207,20 +210,24 @@ if (isset($_POST["send"]) === true) {
     <div id="contact">
         <h1>contact</h1>
         <div id="form">
-            <p id="name-form">
-                <label for="name">name</label>
-            </p>
-            <input id="name" type="text" name="name" size="40">
+            <form action="" method="post" id="contact_form">
+                <p id="name-form">
+                    <label for="name">name</label>
+                </p>
+                <input id="name" type="text" name="name" size="40">
 
-            <p id="mail-form">
-                <label for="mail">e-mail</label>
-            </p>
-            <input id="mail" type="email" name="mail">
+                <p id="mail-form">
+                    <label for="mail">e-mail</label>
+                </p>
+                <input id="mail" type="email" name="mail">
 
-            <p id="comment-form">
-                <label for="comment">comment</label>
-            </p>
-            <textarea id="comment" name="comment"></textarea>
+                <p id="comment-form">
+                    <label for="comment">comment</label>
+                </p>
+                <textarea id="comment" name="comment"></textarea>
+
+                <input type="submit" name="send" value="送信">
+            </form>
         </div>
 
 
