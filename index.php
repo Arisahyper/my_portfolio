@@ -136,10 +136,13 @@ if (isset($_POST["send"]) === true) {
         <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
             <div class="w_no1-box">
                 <section id="w_no1">
-                    <img src="img/1.jpg" width="600" height="390" alt="紹介１">
+                    <img src="img/my_portfolio.png" width="600" height="390" alt="紹介１">
                     <div id="w_no1_text">
-                        <h1>Sample</h1>
-                        <p>説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。
+                        <h1>ポートフォリオサイト</h1>
+                        <p class="lang">
+                            使用言語：HTML.CSS / PHP / JavaScript<br>
+                        </p>
+                        <p class="des">こちらのポートフォリオサイトになります<br>
                         </p>
                     </div>
                 </section>
@@ -153,7 +156,10 @@ if (isset($_POST["send"]) === true) {
                     <img src="img/2.jpg" width="600" height="390" alt="紹介２">
                     <div id="w_no2_text">
                         <h1>Sample</h1>
-                        <p>説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。
+                        <p class="lang">
+                            使用言語：XXXX / XXX / XXXX<br>
+                        </p>
+                        <p class="des">作品の説明文が入ります<br>
                         </p>
                     </div>
                 </section>
@@ -166,7 +172,10 @@ if (isset($_POST["send"]) === true) {
                     <img src="img/3.jpg" width="600" height="390" alt="紹介３">
                     <div id="w_no3_text">
                         <h1>Sample</h1>
-                        <p>説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。
+                        <p class="lang">
+                            使用言語：XXXX / XXX / XXXX<br>
+                        </p>
+                        <p class="des">作品の説明文が入ります<br>
                         </p>
                     </div>
                 </section>
@@ -179,7 +188,10 @@ if (isset($_POST["send"]) === true) {
                     <img src="img/3.jpg" width="600" height="390" alt="紹介３">
                     <div id="w_no3_text">
                         <h1>Sample</h1>
-                        <p>説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。説明欄。
+                        <p class="lang">
+                            使用言語：XXXX / XXX / XXXX<br>
+                        </p>
+                        <p class="des">作品の説明文が入ります<br>
                         </p>
                     </div>
                 </section>
@@ -190,16 +202,11 @@ if (isset($_POST["send"]) === true) {
     <!-- skill -->
     <section id="skill">
         <h1>skill</h1>
-        <div id="python-skill" class="hvr-shrink">
-            <ul id="skill-icon">
-                <li><img src="img/skill/python.png" width="50px" height="50px"></li>
-                <li><img src="img/skill/b-star.png" width="30px" height="30px"></li>
-                <li><img src="img/skill/b-star.png" width="30px" height="30px"></li>
-                <li><img src="img/skill/b-star.png" width="30px" height="30px"></li>
-                <li><img src="img/skill/w-star.png" width="30px" height="30px"></li>
-                <li><img src="img/skill/w-star.png" width="30px" height="30px"></li>
-            </ul>
+        <div id="skill-box" class="hvr-shrink">
+            <img src="./img/skill/skill.jpg" width="64%" height="36%" alt="紹介１">
         </div>
+
+        <!-- width="888.88888" height="500" -->
 
     </section>
 
