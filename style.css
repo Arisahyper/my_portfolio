@@ -338,21 +338,37 @@ h1 {
     padding-left: 36%;
     width: 65%;
 }
-
+#name-form
+{
+    margin: 0%;
+    margin-top: 2%;
+}
 #name 
 {
     /* padding-left: 50%; */
     width: 97%;
 }
-
+#mail-form
+{
+    margin: 0%;
+    margin-top: 2%;
+}
 #mail
 {
     width: 97%;
 }
-
+#comment-form
+{
+    margin-bottom: 0%;
+    margin-top: 2%;
+}
 #comment
 {
     width: 97%;
+}
+#submit-button
+{
+    margin-top: 2%;
 }
 
 /* footer */

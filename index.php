@@ -1,3 +1,24 @@
+<?php
+
+$name = "";
+$email = "";
+$commnet = "";
+
+if (isset($_POST["send"]) === true) {
+    $name = $_POST["name"];
+    $mail = $_POST["mail"];
+    $commnet = $_POST["comment"];
+
+    $fp = fopen("board.txt", "a"); //書き込み専用
+    // fwrite($fp, $name . "\t" . $email . "\t" . $body . "\n");
+    fwrite($fp, "お名前：" . $name . "\n");
+    fwrite($fp, "e-mail：" . $email . "\n");
+    fwrite($fp, "コメント：" . $commnet . "\n");
+    fwrite($fp, "----------------------------------\n");
+    fclose($fp);
+}
+?>
+
 <!DOCTYPE html>
 <html lang="ja">
 
@@ -14,8 +35,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <!-- フォント読み込み -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100&display=swap"
-        rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Alegreya+Sans+SC:ital,wght@1,100&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Caveat" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Caveat&display=swap" rel="stylesheet">
@@ -100,7 +120,7 @@
             <img src="img/icon.png" width="125" height="125" alt="紹介１">
             <p>2000年10月25日生まれ。20歳<br>
                 東京デザインテクノロジーセンター専門学校 プログラマー専攻 3年生<br>
-                ゲームに携わる仕事がしたいと思い、1年目はゲーム科でゲームプログラマーとしての勉強をしていました。
+                ゲームに携わる仕事がしたいと思い、1年目はC++やゲームエンジン、プランニングなどゲームプログラマーとしての勉強をしていました。<br>
                 2年目にPythonに出会い、その面白さに惹かれ進路変更を決意。<br>
                 現在はエンジニアを目指してHTML、PHP、JavaScriptなどの主要言語を勉強しつつ、
                 授業の他にもサークルの仲間と学内のサーバーを使用し勉強しています。
@@ -113,8 +133,7 @@
         <h1>works</h1>
 
 
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png"
-            class="hvr-shrink" target="_blank">
+        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
             <div class="w_no1-box">
                 <section id="w_no1">
                     <img src="img/1.jpg" width="600" height="390" alt="紹介１">
@@ -128,8 +147,7 @@
         </a>
 
 
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png"
-            class="hvr-shrink" target="_blank">
+        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
             <div class="w_no2-box">
                 <section id="w_no2">
                     <img src="img/2.jpg" width="600" height="390" alt="紹介２">
@@ -142,8 +160,7 @@
             </div>
         </a>
 
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png"
-            class="hvr-shrink" target="_blank">
+        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
             <div class="w_no3-box">
                 <section id="w_no3">
                     <img src="img/3.jpg" width="600" height="390" alt="紹介３">
@@ -156,8 +173,7 @@
             </div>
         </a>
 
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png"
-            class="hvr-shrink" target="_blank">
+        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
             <div class="w_no3-box">
                 <section id="w_no3">
                     <img src="img/3.jpg" width="600" height="390" alt="紹介３">
@@ -191,20 +207,27 @@
     <div id="contact">
         <h1>contact</h1>
         <div id="form">
-            <p id="name-form">
-                <label for="name">name</label>
-            </p>
-            <input id="name" type="text" name="name" size="40">
+            <form action="" method="post" id="contact_form">
+                <p id="name-form">
+                    <label for="name">name</label>
+                </p>
+                <input id="name" type="text" name="name" size="40">
 
-            <p id="mail-form">
-                <label for="mail">e-mail</label>
-            </p>
-            <input id="mail" type="email" name="mail">
+                <p id="mail-form">
+                    <label for="mail">e-mail</label>
+                </p>
+                <input id="mail" type="email" name="mail">
 
-            <p id="comment-form">
-                <label for="comment">comment</label>
-            </p>
-            <textarea id="comment" name="comment"></textarea>
+                <p id="comment-form">
+                    <label for="comment">comment</label>
+                </p>
+                <textarea id="comment" name="comment"></textarea>
+                <div id="submit-button">
+                    <div class="hvr-bob">
+                        <input type="submit" name="send" value="send">
+                    </div>
+                </div>
+            </form>
         </div>
 
 
