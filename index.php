@@ -103,20 +103,6 @@ if (isset($_POST["send"]) === true) {
         <h1>profile</h1>
 
         <div class="box">
-            <!-- <ul id="profile-list">
-                <li id="icon">
-                    <img src="img/icon.png" width="125" height="125" alt="紹介１">
-                </li>
-                <li id="description">
-                    2000年10月25日生まれ。20歳<br>
-                    東京デザインテクノロジーセンター専門学校 プログラマー専攻 3年生<br>
-                    ゲームに携わる仕事がしたいと思い、1年目はゲーム科でゲームプログラマーとしての勉強をしていました。
-                    2年目にPythonに出会い、その面白さに惹かれ進路変更を決意。<br>
-                    現在はエンジニアを目指してHTML、PHP、JavaScriptなどの主要言語を勉強しつつ、
-                    授業の他にもサークルの仲間と学内のサーバーを使用し勉強しています。
-
-                </li>
-            </ul> -->
             <img src="img/icon.png" width="125" height="125" alt="紹介１">
             <p>2000年10月25日生まれ。20歳<br>
                 東京デザインテクノロジーセンター専門学校 プログラマー専攻 3年生<br>
@@ -133,12 +119,12 @@ if (isset($_POST["send"]) === true) {
         <h1>works</h1>
 
 
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
+        <a href="https://github.com/Arisahyper/my_portfolio" class="hvr-shrink" target="_blank">
             <div class="w_no1-box">
                 <section id="w_no1">
                     <img src="img/my_portfolio.png" width="600" height="390" alt="紹介１">
                     <div id="w_no1_text">
-                        <h1>ポートフォリオサイト</h1>
+                        <h2>ポートフォリオサイト</h2>
                         <p class="lang">
                             使用言語：HTML.CSS / PHP / JavaScript<br>
                         </p>
@@ -150,12 +136,28 @@ if (isset($_POST["send"]) === true) {
         </a>
 
 
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
+        <a href="https://github.com/Arisahyper/twitter_auto_follow" class="hvr-shrink" target="_blank">
             <div class="w_no2-box">
                 <section id="w_no2">
-                    <img src="img/2.jpg" width="600" height="390" alt="紹介２">
+                    <img src="img/selenium_twitter.png" width="600" height="390" alt="紹介２">
                     <div id="w_no2_text">
-                        <h1>Sample</h1>
+                        <h2>Twitter 自動フォロー</h2>
+                        <p class="lang">
+                            使用言語：Python(selenium)<br>
+                        </p>
+                        <p class="des">作品の説明文が入ります<br>
+                        </p>
+                    </div>
+                </section>
+            </div>
+        </a>
+
+        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
+            <div class="w_no3-box">
+                <section id="w_no3">
+                    <img src="img/3.jpg" width="600" height="390" alt="紹介３">
+                    <div id="w_no3_text">
+                        <h2>Sample</h2>
                         <p class="lang">
                             使用言語：XXXX / XXX / XXXX<br>
                         </p>
@@ -171,23 +173,7 @@ if (isset($_POST["send"]) === true) {
                 <section id="w_no3">
                     <img src="img/3.jpg" width="600" height="390" alt="紹介３">
                     <div id="w_no3_text">
-                        <h1>Sample</h1>
-                        <p class="lang">
-                            使用言語：XXXX / XXX / XXXX<br>
-                        </p>
-                        <p class="des">作品の説明文が入ります<br>
-                        </p>
-                    </div>
-                </section>
-            </div>
-        </a>
-
-        <a href="https://4.bp.blogspot.com/-lus0ib4Eq-g/VwIjQlewxXI/AAAAAAAA5hQ/8Bl0uBfBIlQkgncpQWDABNbnBJgRdXalg/w1200-h630-p-k-no-nu/text_sakuhinten.png" class="hvr-shrink" target="_blank">
-            <div class="w_no3-box">
-                <section id="w_no3">
-                    <img src="img/3.jpg" width="600" height="390" alt="紹介３">
-                    <div id="w_no3_text">
-                        <h1>Sample</h1>
+                        <h2>Sample</h2>
                         <p class="lang">
                             使用言語：XXXX / XXX / XXXX<br>
                         </p>
