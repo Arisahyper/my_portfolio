@@ -1,3 +1,3 @@
 Myportfolio
 
-This site is created for HTML , PHP.
+This site is created by HTML , PHP.
